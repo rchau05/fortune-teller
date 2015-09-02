@@ -1,0 +1,331 @@
+body{
+    background-color: rgba(173,255,137,1);
+	padding, border: 0;
+	width: 100%;
+}
+
+h1, legend, h5{
+    text-align: center;
+}
+
+.colors{
+    float: none;
+    text-align: center;
+    display: inherit;
+    font-size: 24px;
+    margin: 1em;
+    color: white;
+}
+
+.container, .open-container, .inside-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.container{
+    border-bottom: 1px solid green;
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*vertical open*/
+.open-container{
+/*  border-bottom: 1px solid green;*/	
+    height: 400px;
+    width: 400px;
+    /*transform:rotate(90deg);*/
+}
+
+.top-left, .bottom-left, .top-right, .bottom-right {
+	border: 1px solid green;
+	width: 50%;
+	height: 50%;
+	display: block;
+	float: left; 
+	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+	}
+
+.top-right, .bottom-right {
+	float: right;
+}
+
+.top-left{
+border-bottom-right-radius:10%;
+background-color: lime;
+}
+
+.top-right{
+border-bottom-left-radius:10%;
+background-color: orange;
+}
+
+.bottom-left{
+border-top-right-radius:10%;
+background-color: blue;
+}
+
+.bottom-right{
+border-top-left-radius:10%;
+background-color: pink;
+}
+
+.line1 {
+width: 140%;
+    border-bottom: 1px solid green;
+    transform: translateY(-20px) translateX(5px) rotate(45deg);
+    position: absolute;
+    top: 12em;
+    left: -4.6em;
+    z-index: 1;
+}
+
+.line2 {
+    width: 141%;
+    border-bottom: 1px solid green;
+    transform: translateY(20px) translateX(5px) rotate(-45deg);
+    position: absolute;
+     top: 129px;
+    left: -66px;
+}
+
+/*reveal inside of the fortune teller*/
+.fortune-flap{
+    box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 150px 150px 150px;
+    border-color: transparent transparent rgba(83,234,92,1) transparent;
+    transform: rotateY(180deg);
+    z-index: 2;
+    top: 3.7em;
+}
+
+/*    &:before{
+    top: 14.3em;
+    transform: rotateX(180deg);
+    transition: 3s;
+    }*/
+
+.inside-container{
+    background-color: rgba(253,253,253,.9);
+    border-bottom: 1px solid green;
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    box-shadow: 10px 10px 5px grey;
+} 
+
+.line7{
+    box-shadow: 10px 1px 1px grey;
+    width: 101%;
+    border-bottom: 1px solid green;
+    position: absolute;
+    top: 149px;
+    left: -1px;
+
+}
+
+.line8{
+    box-shadow: 10px 1px 1px grey;
+    width: 101%;
+    border-bottom: 1px solid green;
+    position: absolute;
+    top: 149px;
+    left: -1px;
+    transform: rotate(90deg);
+}
+
+/*play/open fortune teller*/
+#top-lf-out, #top-lf-in, #top-rt-out, #top-rt-in, #bottom-lf-out, #bottom-lf-in, #bottom-rt-out, #bottom-rt-in {
+box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+position: relative;
+width: 0;
+height: 0;
+}
+
+#top-lf-in, #top-rt-in, #bottom-lf-in, #bottom-rt-in{
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid rgba(254,254,254,.9);
+}
+
+#top-lf-out{
+top: 3.2em;
+    left: 1.4em;
+    border-style: solid;
+    border-width: 0 100px 100px 75px;
+    border-color: transparent transparent lime transparent;
+    transform: rotate(-56deg);
+}
+
+#top-lf-in{
+    top: -3.5em;
+    left: 7em;
+    border-left: 100px solid transparent;
+    transform: rotate(0deg);
+    text-align: left;
+}
+
+#top-rt-in{
+    top: -14.2em;
+    left: 14.2em;
+    border-right: 100px solid transparent;
+    transform: rotate(720deg);
+}
+
+#top-rt-out{
+top: -25.3em;
+    left: 14.5em;
+    border-style: solid;
+    border-width: 0 100px 100px 75px;
+    border-color: transparent transparent orange transparent;
+    transform: rotate(56deg);
+}
+
+#bottom-lf-out{
+    top: -17.5em;
+    left: 14.5em;
+    border-style: solid;
+    border-width: 0 100px 100px 75px;
+    border-color: transparent transparent pink transparent;
+    transform: rotate(124deg);
+}
+
+#bottom-lf-in{
+top: -28.6em;
+    left: 7em;
+    border-right: 100px solid transparent;
+    transform: rotate(180deg);
+}
+
+#bottom-rt-in{
+top: -39.3em;
+    left: 14.2em;
+    border-left: 100px solid transparent;
+    transform: rotate(180deg);
+}
+
+#bottom-rt-out{
+    border-style: solid;
+    border-width: 0 100px 100px 75px;
+    border-color: transparent transparent blue transparent;
+    transform: rotate(236deg);
+    top: -46em;
+    left: 1.3em;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight{
+    color: green;
+    position: absolute;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#one{
+    left: 1em;
+    top: 3em;
+    transform: rotate(90deg);
+}
+
+#two{
+    right: 1em;
+    top: 3em;
+    transform: rotate(270deg);
+}
+
+#three{
+    top: 3em;
+    left: .75em;
+}
+
+#four{
+    top: 3em;
+    right: .75em;
+    transform: rotate(180deg);
+}
+
+#five{
+    left: 1em;
+    top: 3em;
+    transform:rotate(270deg); 
+}
+
+#six{
+    right: 1em;
+    top: 3em;
+    transform:rotate(90deg); 
+}
+
+#seven{
+    top: 3em;
+    left: .75em;
+    transform: rotate(180deg);
+}
+
+#eight{
+    top: 3em;
+    right: 0.75em;
+}
+
+#line3, #line4, #line5, #line6{
+    z-index: 1;
+    width: 24%;
+    border-bottom: 1px solid green;
+    position: absolute;
+}
+
+#line1{
+    border-bottom: 1px solid green;
+    left: 7.2em;
+    position: absolute;
+    top: 14.2em;
+    width: 49%;
+    z-index: 1;
+}
+#line2{
+    border-bottom: 1px solid green;
+    width: 74%;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 14.4em;
+    left: 3.6em;
+    z-index: 1;
+}
+
+#line3{
+    -webkit-transform: rotate(-90deg);
+    top: 21.5em;
+    left: 17.5em;
+    transform: rotate(24deg);
+}
+
+#line4{
+    -webkit-transform: rotate(-90deg);
+    top: 22em;
+    left: 4.5em;
+    transform: rotate(-41deg);
+}
+
+#line5{
+    -webkit-transform: rotate(-90deg);
+    top: 7em;
+    left: 4em;
+    transform: rotate(26deg);
+}
+#line6{
+    -webkit-transform: rotate(-90deg);
+    top: 6.2em;
+    left: 16.8em;
+    transform: rotate(146deg);
+}

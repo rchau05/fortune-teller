@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="paperFortune">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fortune Teller</title>
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- angular -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-resource.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+  <script src="controllers.js"></script>
+  <!-- custom script -->
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+<!-- <a href="views/open_fortune.html">Open Fortune</a>
+<a href="views/open_fortune_horizontal.html">Open Fortune Horizontal</a>
+<a href="views/reveal_fortune.html">Reveal 
+Fortune</a> -->
+<h1>Paper Fortune Teller</h1>
+<h5>AKA</h5>
+<h5>(Cootie Catchers)</h5>
+<legend>App Edition</legend>
+<div id='display'></div>
+<div ng-view></div>
+
+</body>

@@ -1,0 +1,124 @@
+<!-- INDEX  STARTING WITH CLOSED FORTUNE -->
+<div class="container" ng-show="close">
+<div class="line1"></div>
+<div class="line2"></div>
+
+<div class="top-left" ng-click="play(5)">
+<!-- <div id="top-lf-lf"></div>
+<div id="top-lf-rt"></div> -->
+</div>
+
+<div class="top-right" ng-click="play(6)">
+<!-- <div id="top-rt-lf"></div>
+<div id="top-rt-rt"></div> -->
+</div>
+
+<div class="bottom-left" ng-click="play(4)">
+<!-- <div id="bottom-lf-lf"></div>
+<div id="bottom-lf-rt"></div> -->
+</div>
+
+<div class="bottom-right" ng-click="play(4)">
+<!-- <div id="bottom-rt-lf"></div>
+<div id="bottom-rt-rt"></div> -->
+</div>
+</div>
+
+<!-- OPENS VERTICLE FORTUNE 
+ -->
+<!-- vertical open -->
+<div class="open-container" ng-show="vertical">
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="line4"></div>
+<div id="line5"></div>
+<div id="line6"></div>
+
+<div id="top-lf-out"></div>
+
+<div id="top-lf-in">
+<p id="eight" ng-click="play(8)">8</p>
+</div>
+
+
+<div id="top-rt-in">
+	<p id="three" ng-click="play(3)">3</p>
+</div>
+<div id="top-rt-out"></div>
+
+
+<div id="bottom-lf-out"></div>
+<div id="bottom-lf-in">
+	<p id="seven" ng-click="play(7)">7</p>	
+</div>
+
+<div id="bottom-rt-in">
+	<p id="four" ng-click="play(4)">4</p>	
+</div>
+<div id="bottom-rt-out"></div>
+</div>
+
+<!-- OPEN HORIZONTAL FORTUNE -->
+<!-- IN PAGE STYLING ON THE BOTTOM -->
+
+<div class="horizontal" ng-show="horizontal">
+<!-- vertical open -->
+<div class="open-container">
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="line4"></div>
+<div id="line5"></div>
+<div id="line6"></div>
+
+<div id="top-lf-out"></div>
+<div id="top-lf-in">
+		<p id="two" ng-click="play(2)">2</p>
+</div>
+
+
+<div id="top-rt-in">
+		<p id="five" ng-click="play(5)">5</p>
+</div>
+<div id="top-rt-out"></div>
+
+
+<div id="bottom-lf-out"></div>
+<div id="bottom-lf-in">
+		<p id="one" ng-click="play(1)">1</p>
+</div>
+
+<div id="bottom-rt-in">
+		<p id="six" ng-click="play(6)">6</p>
+</div>
+<div id="bottom-rt-out"></div>
+</div>
+</div>
+
+<style>
+/*same thing as the open_fortune.html page but rotated*/
+	.horizontal .open-container{
+		transform: rotate(90deg);
+	}
+
+	/*this is #top-rt-out verticle*/
+	.horizontal #top-lf-out { 
+    border-color: transparent transparent orange transparent;
+	}
+
+	/*this is #bottom-rt-out verticle*/
+	.horizontal #top-rt-out { 
+    border-color: transparent transparent pink transparent;
+	}
+
+	/*this is #top-lf-out verticle*/
+	.horizontal #bottom-lf-out { 
+    border-color: transparent transparent blue transparent;
+	}
+
+	/*this is #bottom-rt-out verticle*/
+	.horizontal #bottom-rt-out { 
+    border-color: transparent transparent lime transparent;
+	}
+</style>
