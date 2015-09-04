@@ -1,5 +1,9 @@
+<h2>Enjoy your fortune!</h2>
 
-<div class="fortune-flap"></div>
+<!-- FORTUNE FLAP -->
+<div class="fortune-flap">
+<div id='message' ng-controller="MainCtrl">{{message}}</div>
+</div>
 
 <div class="inside-container">
 <div class="line1"></div>
@@ -29,3 +33,19 @@
 
 </div>
 
+<!-- Single button -->
+<div class="btn-group" ng-click="	go('/')">
+  <button class="btn btn-success">Replay?</button>
+</div>
+
+<style>
+	h1, h5, legend{
+		display: none;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+
+</style>
