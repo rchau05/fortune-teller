@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fortune Teller</title>
   <!-- bootstrap css -->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://farm1.staticflickr.com/698/20972588333_ef7c9d0f4f_t.jpg">
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- angular -->
@@ -18,17 +19,12 @@
 </head>
 
 <body ng-controller="MainCtrl">
-<h6 ng-click="go('/howto')">How To Play</h6>
 
-<!-- <a href="views/open_fortune.html">Open Fortune</a>
-<a href="views/open_fortune_horizontal.html">Open Fortune Horizontal</a>
-<a href="views/reveal_fortune.html">Reveal 
-Fortune</a> -->
-
+<nav>
 <h1>Paper Fortune Teller</h1>
-<h5>AKA</h5>
-<h5>(Cootie Catchers)</h5>
-<legend>App Edition</legend>
+<h4 ng-click="go('/howto')" class="pointer">How To Play</h4>
+</nav>
+
 <div id='display'></div>
 <div ng-view></div>
 

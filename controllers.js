@@ -12,7 +12,7 @@ angular.module('paperFortune.controllers', [])
 		$scope.close = true
 		$scope.playCount=0
 		$scope.count = 0
-		$scope.message = 'hey';
+		$scope.message = 'Please wait for your fortune!!';
 
 		$scope.play = function(x){
 
@@ -56,7 +56,6 @@ angular.module('paperFortune.controllers', [])
 					  	console.log('MESSAGE', message);
 					  	var mes = document.getElementById('message'); 
 					  	mes.innerHTML = message;
-
 					  });	
 
 				}
@@ -64,4 +63,4 @@ angular.module('paperFortune.controllers', [])
 
 
 		}
-	}])
+	}]);
